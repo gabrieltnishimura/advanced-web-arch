@@ -1,0 +1,20 @@
+<html>
+  <head>
+  	<title>Example 1</title>
+  </head>
+  <body>
+    <h1 style="color: red;"> you'll never click me <a id="hacked" href="0.html">0</a> </h1>
+
+  </body>
+  <script>
+  console.log("ever");
+  document.getElementById("hacked").addEventListener("mouseover", function() {
+    document.getElementById("hacked").setAttribute("href", "2.html");
+    document.getElementById("hacked").innerHTML = "2"
+  });
+  document.getElementById("hacked").addEventListener("mouseout", function() {
+    document.getElementById("hacked").setAttribute("href", "_0.html");
+    document.getElementById("hacked").innerHTML = "0"
+  });
+  </script>
+</html>
