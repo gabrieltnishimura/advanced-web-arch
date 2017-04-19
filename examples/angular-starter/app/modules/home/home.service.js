@@ -3,7 +3,7 @@
 
     var _homeService = function ($http, appSettings, $window) {
         var _getHome = function () {
-            return $http.get(appSettings.apiBensEndpoint + "/common/lojas");
+            return $http.get(appSettings.apiEndpoint + "/home");
         };
 
         return {

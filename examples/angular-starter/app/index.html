@@ -7,8 +7,16 @@
 	<title>Angular Starter</title>
 </head>
 <body ng-app="app">
-
-  <script src="../node_modules/angular/angular.min.js"></script>
-  <script src="app.js"></script>
+	<div ui-view></div>
+	
+	<script src="../node_modules/angular/angular.min.js"></script>
+	<script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+	
+	<script src="app.module.js"></script>
+	<script src="/modules/app.module.js"></script>
+	<script src="/modules/app.config.js"></script>
+	<script src="/modules/home/home.controller.js"></script>
+	<script src="/modules/home/home.factory.js"></script>
+	<script src="/modules/home/home.service.js"></script>
 </body>
 </html>
