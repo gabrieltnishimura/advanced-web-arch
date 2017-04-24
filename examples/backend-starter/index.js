@@ -1,17 +1,23 @@
 // Main Application
 var express 		= require('express');
-var app 			= module.exports = express();
 var path            = require('path');
+var app = express();
+var port = process.env.PORT || 9001;
 
 var server = express()
-    .use('/app', express.static("./app"))
-    .use('/scripts', express.static(__dirname + './node_modules/'))
-    .all('/*', function (req, res, next) {
-        res.sendFile('/app/index.html', {root: __dirname});
-    })
-    .listen(process.env.PORT || 3000, function () {
-        var host = server.address().address;
-        var port = server.address().port;
-        console.log('Instads REST API listening at http://%s:%s', host, port);
+	.use('/api/v1', app)
+    .listen(port, function () {
+        console.log('Backend listening at http://localhost:%s', port);
     });
 
+app.get('/home', function (req, res) {
+    res.send([{
+		'id': '1',
+		'title': 'Title',
+		'comment': 'Lorem'
+	},{
+		'id': '2',
+		'title': 'Second',
+		'comment': 'Ipsum'
+	}]);
+});

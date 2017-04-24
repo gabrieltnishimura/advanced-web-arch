@@ -2,6 +2,6 @@
     "use strict";
 	
 	var appSettings = {
-		apiEndpoint: 'http://localhost:3000/api'
+		apiEndpoint: 'http://localhost:3000/api/v1'
 	};
 })();
