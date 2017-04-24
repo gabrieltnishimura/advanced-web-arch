@@ -12,5 +12,5 @@
 
     };
 
-    angular.module('app.home').service('HomeService', _homeService);
+    angular.module('app').service('HomeService', _homeService);
 })();

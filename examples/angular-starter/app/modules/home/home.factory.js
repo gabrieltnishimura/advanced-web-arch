@@ -30,11 +30,11 @@
         };
 
         return {
-            toHome: _toHome
+            toHome: _toHome,
 			fromHome: _fromHome
         };
 
     };
 
-    angular.module('app.home').service('HomeFactory', _homeFactory);
+    angular.module('app').service('HomeFactory', _homeFactory);
 })();

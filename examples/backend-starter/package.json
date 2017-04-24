@@ -1,0 +1,19 @@
+{
+  "name": "angular-starter",
+  "version": "1.0.0",
+  "description": "Basic package.json for a simple angular application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Gabriel Takaoka Nishimura <gabrieltnishimura@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^0.4.2",
+    "express": "^4.15.2"
+  }
+}

@@ -3,8 +3,8 @@
 
     var _homeController = function () {
         var vm = this;
-        
+        console.log('heyo');
     };
 
-    angular.module('app.home').controller('HomeController', _homeController);
+    angular.module('app').controller('HomeController', _homeController);
 })();
